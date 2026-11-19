@@ -650,14 +650,11 @@
               -->
               <img
                 id="exploded_view"
+                src="assets/exploded_view.jpeg"
+                alt="ARIES exploded CAD view"
                 class="w-full h-full object-cover"
-                autoplay
-                loop
-                muted
-                playsinline
-              >
-                <source src="assets/exploded_view.jpeg" type="video/mp4" onerror="handleMediaError('aries-video', 'aries-svg-fallback')" />
-              </img>
+                onerror="this.style.display='none'; document.getElementById('aries-svg-fallback')?.classList.remove('hidden');"
+              />
 
               <!-- Inline SVG Technical Fallback: 5-DOF Arm + Passive Tool-Changer Schematic -->
               <svg id="aries-svg-fallback" class="hidden w-full h-full" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schematic of ARIES 5-DOF robotic arm and passive quick-change mechanism">
