@@ -643,21 +643,21 @@
               <!--
                 ===============================================================
                 ASSET SLOT: ARIES Demo Video or CAD Render
-                Drop a short looping clip at: assets/aries_demo.mp4
+                Drop a short looping clip at: assets/exploded_view.mp4
                 (Or swap this <video> for <img src="assets/aries_render.jpg">)
-                When assets/aries_demo.mp4 is missing, JS reveals the SVG schematic below.
+                When assets/exploded_view.mp4 is missing, JS reveals the SVG schematic below.
                 ===============================================================
               -->
-              <video
-                id="aries-video"
+              <img
+                id="exploded_view"
                 class="w-full h-full object-cover"
                 autoplay
                 loop
                 muted
                 playsinline
               >
-                <source src="assets/aries_demo.mp4" type="video/mp4" onerror="handleMediaError('aries-video', 'aries-svg-fallback')" />
-              </video>
+                <source src="assets/exploded_view.mp4" type="video/mp4" onerror="handleMediaError('aries-video', 'aries-svg-fallback')" />
+              </img>
 
               <!-- Inline SVG Technical Fallback: 5-DOF Arm + Passive Tool-Changer Schematic -->
               <svg id="aries-svg-fallback" class="hidden w-full h-full" viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schematic of ARIES 5-DOF robotic arm and passive quick-change mechanism">
